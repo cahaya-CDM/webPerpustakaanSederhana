@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "juni";
+  src: url("../fonts/juni.otf") format("opentype");
+}
+body {
+  background: rgb(174, 238, 192);
+  background: radial-gradient(
+    circle,
+    rgba(174, 238, 192, 1) 0%,
+    rgba(168, 233, 148, 1) 100%
+  );
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  /* background-color: aqua; */
+}
+nav {
+  display: flex;
+  background: green;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 50px;
+}
+nav .judul {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "juni";
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: black; */
+  width: 50%;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+}
+a[href*="halaman="] {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: 1px solid rgb(0, 255, 0);
+  color: rgb(0, 255, 0);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+a[href*="halaman="]:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+button {
+  background-color: rgb(0, 255, 0);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cari {
+  display: flex;
+}
+.cari input {
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+}
+.cari button {
+  border-radius: 0 10px 10px 0;
+}
+
+td img {
+  width: 50px;
+  height: auto;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+table {
+  width: 80%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: green;
+  color: white;
+  font-family: "juni";
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+nav ul li .btn-log a{
+    color: white;
+    text-decoration: none;
+}
